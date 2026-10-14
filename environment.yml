@@ -1,0 +1,31 @@
+# Reproducible environment for the PHM 2018 dynamic survival project.
+#   conda env create -f environment.yml
+#   conda activate phm2018
+# Versions are the ones the notebooks were run with (macOS, Apple Silicon, MPS backend).
+name: phm2018
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      # data
+      - duckdb==1.5.6
+      - pyarrow==25.0.1
+      - pandas==3.0.6
+      - numpy==2.4.6
+      # modelling
+      - torch==2.14.1
+      - pycox==0.3.0
+      - torchtuples==0.2.2
+      - scikit-learn==1.9.1
+      - scipy==1.17.1
+      - lifelines==0.30.3
+      - optuna==5.0.0
+      - tableone
+      # plots & notebooks
+      - matplotlib==3.11.2
+      - jupyter==1.1.1
+      - ipykernel==7.4.0
+      - nbformat==5.11.1
+      - nbconvert==7.17.1
