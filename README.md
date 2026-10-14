@@ -194,6 +194,7 @@ results/
                            loss_curves.png、模型權重
     interpretation/        由這次模型產生的結果：by_horizon.csv、one_prediction.png、
                            fleet_72h.png、fleet_hourly_72h.csv、by_outcome_72h.csv
+                           （重跑時另存 interpretation_<日期時間>/，不覆蓋）
   20261011_145955/         README 引用的這次結果（含 interpretation/）
 data/                      不進 git：raw/（原始 CSV）、processed/（notebook 產出）
 ```
